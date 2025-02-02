@@ -1,6 +1,5 @@
-// src/components/Header.tsx
-
 import React from 'react';
+import Link from 'next/link'; 
 
 const Header: React.FC = () => {
   return (
@@ -8,10 +7,10 @@ const Header: React.FC = () => {
       <h1>JoseJaraTech</h1>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/productos">Productos</a></li>
-          <li><a href="/contacto">Contacto</a></li>
+          <li><Link href="/"><a>Home</a></Link></li>
+          <li><Link href="/about"><a>About</a></Link></li>
+          <li><Link href="/productos"><a>Productos</a></Link></li>
+          <li><Link href="/contacto"><a>Contacto</a></Link></li>
         </ul>
       </nav>
     </header>
